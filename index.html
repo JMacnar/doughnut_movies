@@ -1,0 +1,63 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Doughnut potential: the films</title>
+<style>
+  :root { color-scheme: light dark; --ink:#1a1a1a; --muted:#666; --bg:#fff; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#ececec; --muted:#9a9a9a; --bg:#121212; }
+  }
+  body { margin:0 auto; padding:28px 16px 56px; max-width:760px; background:var(--bg);
+         color:var(--ink);
+         font:16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  h1 { font-size:21px; font-weight:600; margin:0 0 10px; }
+  p  { margin:0 0 22px; }
+  p.lead { color:var(--muted); font-size:15px; }
+  figure { margin:0 0 30px; }
+  video { width:100%; display:block; background:#000; border-radius:5px; }
+  figcaption { margin-top:7px; font-size:14px; color:var(--muted); }
+  footer { margin-top:44px; font-size:13px; color:var(--muted); }
+  a { color:inherit; }
+</style>
+
+<h1>The Doughnut potential: setting the pore of a protein ring</h1>
+
+<p class="lead">Four films of a protein ring forming out of noise. RFdiffusion3
+builds the backbone over 200 steps; until step 158 the Doughnut potential pushes every
+atom towards a circle of radius r<sub>0</sub> on the symmetry axis, so whatever is
+inside gets pushed out. Then the push stops and RFdiffusion3 finishes the ring on its own. The four
+panels differ only in how hard it pushes: weight 20, 30, 40, 50. The top row looks down
+that axis, the middle row from the side, the trace below shows when the push is on, and
+the dashed circle is r<sub>0</sub>. Each panel shows the most typical backbone that
+passed our shape filter, and how many passed. Tap a film and turn the phone
+sideways.</p>
+
+<figure>
+  <video controls preload="metadata" playsinline poster="c2_200_r15.jpg"
+         src="c2_200_r15.mp4"></video>
+  <figcaption>200 residues per chain, two chains (C2), r<sub>0</sub> 15&nbsp;&Aring;.</figcaption>
+</figure>
+
+<figure>
+  <video controls preload="metadata" playsinline poster="c2_200_r20.jpg"
+         src="c2_200_r20.mp4"></video>
+  <figcaption>200 residues per chain, two chains (C2), r<sub>0</sub> 20&nbsp;&Aring;.</figcaption>
+</figure>
+
+<figure>
+  <video controls preload="metadata" playsinline poster="c2_500_r25.jpg"
+         src="c2_500_r25.mp4"></video>
+  <figcaption>500 residues per chain, two chains (C2), r<sub>0</sub> 25&nbsp;&Aring;.</figcaption>
+</figure>
+
+<figure>
+  <video controls preload="metadata" playsinline poster="c2_500_r35.jpg"
+         src="c2_500_r35.mp4"></video>
+  <figcaption>500 residues per chain, two chains (C2), r<sub>0</sub> 35&nbsp;&Aring;.</figcaption>
+</figure>
+
+<footer>
+  Joanna M. Macnar, Kevin O&rsquo;Brien, Alena Khmelinskaia &middot;
+  Department of Chemistry, Ludwig-Maximilians-Universit&auml;t M&uuml;nchen &middot;
+  <a href="mailto:joanna.macnar@lmu.de">joanna.macnar@lmu.de</a>
+</footer>
