@@ -2,7 +2,7 @@
 
 Four runs of RFdiffusion3 guided by the Doughnut potential, filmed step by step. They are the films behind the QR code on the poster *The Doughnut Potential: Guiding RFdiffusion Towards Open-Pore Protein Ring Design*.
 
-Open <https://jmacnar.github.io/doughnuts_movies/>, or play the files here.
+Open <https://jmacnar.github.io/doughnut_movies/>, or play the files here.
 
 | file | chain length | r0 |
 |---|---|---|
